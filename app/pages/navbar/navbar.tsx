@@ -4,7 +4,7 @@ const MyNavbar = () => {
       <a href="/" className="flex">
         Home
       </a>
-      <a href="/about" className="flex">
+      <a href="/" className="flex">
         Game
       </a>
     </section>
