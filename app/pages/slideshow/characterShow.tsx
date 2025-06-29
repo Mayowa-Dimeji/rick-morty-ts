@@ -1,5 +1,5 @@
 import Card from "./card";
-import axios from "axios";
+
 import { useState, useEffect, use } from "react";
 
 const CharacterShow = () => {
@@ -8,10 +8,17 @@ const CharacterShow = () => {
   useEffect(() => {
     const fetchCharacters = async () => {
       try {
-        const response = await axios.get(
+        const response = await fetch(
           "https://rickandmortyapi.com/api/character"
         );
-        setCharacters(response.data.results);
+
+        // Check if the response is successful
+        if (!response.ok) {
+          throw new Error(`Error: ${response.statusText}`);
+        }
+
+        const data = await response.json(); // Parse the response as JSON
+        setCharacters(data.results); // Set the characters in state
       } catch (error) {
         console.error("Error fetching characters:", error);
       }
@@ -19,13 +26,15 @@ const CharacterShow = () => {
 
     fetchCharacters();
   }, []);
+
   return (
-    <section className="flex flex-col p-4 gap-4 ">
-      <h1>Meet the characters</h1>
+    <section className="flex flex-col  gap-5 p-8 ">
+      <h1 className="text-2xl">Meet the characters</h1>
 
       <section className="flex gap-4 overflow-x-auto ">
         {characters.map((character: any) => (
           <Card
+            className="flex-1 min-w-[200px] max-w-xs"
             key={character.id}
             name={character.name}
             image={character.image}

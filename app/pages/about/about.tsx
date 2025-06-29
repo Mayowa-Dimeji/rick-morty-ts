@@ -4,12 +4,12 @@ const About = () => {
       <img
         src="/assets/rmlogo.png"
         alt="rick and morty logo"
-        className=" shrink-0  w-sm "
+        className="w-full max-w-md"
       />
       <img
         src="/assets/randm.png"
         alt="rick and morty"
-        className=" shrink-0 w-sm "
+        className="w-full max-w-md "
       />
     </section>
   );

@@ -8,6 +8,7 @@
 html,
 body {
   @apply bg-white dark:bg-gray-700;
+  font-family: Orbitron, sans-serif;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
