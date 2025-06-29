@@ -1,5 +1,9 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+
+import MyNavbar from "~/pages/navbar/navbar";
+import About from "~/pages/about/about";
+import Portal from "~/pages/portal/portal";
+import CharacterShow from "~/pages/slideshow/characterShow";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -9,5 +13,12 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <Welcome />;
+  return (
+    <>
+      <MyNavbar />
+      <About />
+      <CharacterShow />
+      <Portal />
+    </>
+  );
 }
