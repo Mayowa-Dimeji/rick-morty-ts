@@ -1,7 +1,7 @@
 const Card = ({ name, image, status, species }: any) => {
   return (
     <section>
-      <section className="min-w-[200px] max-w-xs backdrop-blur-md bg-white/30 dark:bg-black/25 flex flex-col h-full shadow-lg rounded-lg p-4 hover:animate-pulse hover:scale-105 gap-5">
+      <section className="min-w-[200px] max-w-xs backdrop-blur-md bg-white/30 dark:bg-black/25 flex flex-col h-full shadow-lg rounded-lg p-4 hover:animate-pulse gap-5">
         <figure>
           <img src={image} alt={name} className="rounded-md" />
         </figure>

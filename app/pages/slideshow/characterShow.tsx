@@ -31,7 +31,7 @@ const CharacterShow = () => {
     <section className="flex flex-col  gap-5 p-8 ">
       <h1 className="text-2xl">Meet the characters</h1>
 
-      <section className="flex gap-4 overflow-x-auto ">
+      <section className="flex gap-4 overflow-x-auto  p-8">
         {characters.map((character: any) => (
           <Card
             className="flex-1 min-w-[200px] max-w-xs"
