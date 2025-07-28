@@ -16,19 +16,19 @@ Test your multiversal knowledge across species, origins, and status trivia based
 
 ---
 
-## ✏️ Dashboard View
+## Dashboard View
 
 ![ Dashboard View](./public/assets/dashboard.png)
 
 ---
 
-## ✏️ Characters View
+## Characters View
 
 ![ Characters View](./public/assets/meetthecharacters.png)
 
 ---
 
-## ✏️ Trivia
+## Trivia
 
 ![ Trivia](./public/assets/trivia.png)
 
